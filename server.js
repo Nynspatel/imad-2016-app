@@ -8,7 +8,7 @@ app.use(morgan('combined'));
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
-app.get('/https://cloud.imad.hasura.io/code/files/ui%2Farticle-one.html',function(req, res){
+app.get('/article-one',function(req, res){
   res.sendFile('Article will be request and served here');
 });
 
